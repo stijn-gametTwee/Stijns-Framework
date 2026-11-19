@@ -24,12 +24,21 @@ nav = [
 
     { "Shared" = [
         "shared/index.md",
+        { "Config" = [
+            "shared/config/index.md"
+        ]},
+        { "Utility" = [
+            "shared/utility/index.md"
+        ]},
     ]},
 
     { "Server" = [
         "server/index.md",
+        { "Managers" = [
+            "server/managers/index.md"
+        ]},
         { "Services" = [
-            "client/services/index.md"
+            "server/services/index.md"
         ]},
     ]},
 ]
