@@ -1,27 +1,23 @@
-
 name: Documentation
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
   deploy:
-    name: Deploy documentation
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
 
@@ -37,6 +33,4 @@ jobs:
 
       - name: Deploy documentation
         run: |
-          VERSION="${GITHUB_REF_NAME#v}"
-
-          mike deploy --push "$VERSION"
+          mike deploy --push 1.0.0
