@@ -4,8 +4,8 @@ site_description = "A modular Roblox Roleplay Backend Framework"
 site_author = "Stijn Praet"
 site_url = "https://stijn-gamettwee.github.io/Stijns-Framework/"
 
-repo_url = "https://github.com/stijn-gametTwee/Stijns-Framework"
-repo_name = "stijn-gamettwee/stijns-framework"
+# repo_url = "https://github.com/stijn-gametTwee/Stijns-Framework"
+# repo_name = "stijn-gamettwee/stijns-framework"
 
 copyright = "Copyright &copy; 2026 Stijn Praet"
 
