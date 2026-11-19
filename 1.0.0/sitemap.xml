@@ -16,12 +16,21 @@
         <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/</loc>
       </url>
       <url>
+        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/managers/</loc>
+      </url>
+      <url>
         <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/services/</loc>
       </url>
       <url>
         <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/</loc>
       </url>
       <url>
+        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/config/</loc>
+      </url>
+      <url>
         <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/services/</loc>
+      </url>
+      <url>
+        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/utility/</loc>
       </url>
 </urlset>
