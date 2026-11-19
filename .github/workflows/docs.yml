@@ -1,9 +1,18 @@
+
 name: Documentation
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Documentation version (e.g. 1.1.0)"
+        required: true
+        type: string
+      make_default:
+        description: "Make this the default version?"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,4 +42,9 @@ jobs:
 
       - name: Deploy documentation
         run: |
-          mike deploy --push 1.0.0
+          mike deploy --push "${{ inputs.version }}"
+
+      - name: Set default version
+        if: ${{ inputs.make_default }}
+        run: |
+          mike set-default --push "${{ inputs.version }}"
