@@ -39,7 +39,4 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
 
-          echo "Deploying documentation version: $VERSION"
-
-          mike deploy --push --update-aliases "$VERSION" latest
-          mike set-default --push latest
+          mike deploy --push "$VERSION"
