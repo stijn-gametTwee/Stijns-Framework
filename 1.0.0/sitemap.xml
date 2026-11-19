@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/client/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/client/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/client/services/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/client/services/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/installation/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/installation/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/server/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/managers/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/server/managers/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/server/services/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/server/services/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/shared/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/config/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/shared/config/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/services/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/shared/services/</loc>
       </url>
       <url>
-        <loc>https://stijn-gamettwee.github.io/Stijns-Framework/1.0.0/shared/utility/</loc>
+        <loc>https://framework.madebystijn.be/1.0.0/shared/utility/</loc>
       </url>
 </urlset>
