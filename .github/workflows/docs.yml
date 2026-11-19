@@ -1,29 +1,45 @@
+
 name: Documentation
+
 on:
   push:
-    branches:
-      - master
-      - main
+    tags:
+      - "v*"
+
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
+
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    name: Deploy documentation
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/configure-pages@v6
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v6
+      - name: Checkout repository
+        uses: actions/checkout@v7
         with:
-          python-version: 3.x
-      - run: pip install zensical
-      - run: zensical build --clean
-      - uses: actions/upload-pages-artifact@v5
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
-          path: site
-      - uses: actions/deploy-pages@v5
-        id: deployment
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install zensical
+          pip install git+https://github.com/squidfunk/mike.git
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy documentation
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+
+          echo "Deploying documentation version: $VERSION"
+
+          mike deploy --push --update-aliases "$VERSION" latest
+          mike set-default --push latest

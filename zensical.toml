@@ -4,14 +4,42 @@ site_description = "A modular Roblox Roleplay Backend Framework"
 site_author = "Stijn Praet"
 site_url = "https://stijn-gamettwee.github.io/Stijns-Framework/"
 
-repo_url = "https://github.com/stijn-gamettwee/stijns-framework"
+repo_url = "https://github.com/stijn-gametTwee/Stijns-Framework"
 repo_name = "stijn-gamettwee/stijns-framework"
 
 copyright = "Copyright &copy; 2026 Stijn Praet"
 
 nav = [
-    { "Getting Started" = "index.md" },
+    { "Getting Started" = [
+        "index.md",
+        "installation.md",
+    ]},
+
+    { "Client" = [
+        "client/index.md",
+        { "Services" = [
+            "client/services/index.md"
+        ]},
+    ]},
+
+    { "Shared" = [
+        "shared/index.md",
+    ]},
+
+    { "Server" = [
+        "server/index.md",
+        { "Services" = [
+            "client/services/index.md"
+        ]},
+    ]},
 ]
+
+[project.extra.version]
+provider = "mike"
+
+[project.plugins.mike]
+enabled = true
+version_selector = true
 
 [project.theme]
 language = "en"
@@ -24,13 +52,11 @@ features = [
     "content.tooltips",
     "header.autohide",
     "navigation.expand",
-    "navigation.footer",
     "navigation.indexes",
     "navigation.instant",
     "navigation.instant.prefetch",
     "navigation.instant.progress",
     "navigation.path",
-    "navigation.sections",
     "navigation.top",
     "navigation.tracking",
     "search.highlight",
